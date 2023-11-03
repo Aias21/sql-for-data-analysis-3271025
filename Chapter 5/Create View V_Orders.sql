@@ -6,4 +6,4 @@ SELECT O.CreationDate AS OrderDate,
 FROM Orders O
   join Salesperson S ON(O.SalespersonID = S.SalespersonID)
 GROUP BY O.CreationDate,
-  concat(S.FirstName, ' ', S.LastName)
+  concat(S.FirstName, ' ', S.LastName);
